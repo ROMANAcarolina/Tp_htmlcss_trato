@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.nav_sanpietro {
+    font-family: 'Pacifico', cursive;
+    padding-left: 2rem;
+}
+header {
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: darkred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+.headerLink {
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+.headerLink:hover {
+    color: green;
+}
+
+.acceuil {
+    background-image: url(img/pizza-2810589_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accueilsanpietro {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 5rem;
+    padding-bottom: 3rem;
+}
+
+.find {
+    background-color: darkred;
+    color: white;
+    padding: 2rem 20rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 50px;
+}
+
+.find:hover {
+    background-color: white;
+    color: green;
+}
+
+.acceuilsanpietro-adjusted {
+    margin-left: 15rem;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+.plat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+img {
+    max-width: 400px;
+}
+
+.carte {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 0.5rem;
+}
+.carte:hover {
+    background-color: green;
+}
+
+.nosServices {
+    background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.serviceElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vh;
+    margin: 2rem;
+}
+
+.serviceBox {
+    background-color: rgba(92,0,0,255);
+    color: white;
+    height: 280px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+}
+
+.serviceImage {
+    width: 100%;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+.contactLigne{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding: 1rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+.contactLigne div a
+{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: forestgreen;
+    font-weight: bold;
+}
+.contactLigne div a:hover
+{
+    color: darkred;
+}
+
+.Map{
+    display: flex;
+    width: 100%;
+}
+
+footer{
+    font-family: 'Pacifico', cursive;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    html{
+        font-size: 0.5rem;
+    }
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .find{
+        padding: 2rem 10rem;
+        margin-left: 3rem;
+    }
+    .acceuilsanpietro-adjusted {
+        margin-left: 8rem;
+    }
+
+    .plat {
+        flex-direction: column;
+        text-align: center;
+    }
+    .plat img{
+        max-width: 70%;
+    }
+
+    .serviceElement {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+        max-height: 60vh;
+        padding-bottom: 1rem;
+    }
+    .carte{
+        text-align: center;
+        margin-left: 5rem;
+    }
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info div iframe{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1445px)
+{
+    html {
+        font-size: 0.8rem;
+    }
+    .plat {
+        flex-direction: column;
+        text-align: center;
+    }
+    .notreCarte img {
+        max-width: 70%;
+    }
+    .serviceElement {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+        max-height: 50vh;
+        padding-bottom: 1rem;
+    }
+    .carte {
+        text-align: center;
+        margin-left: 5rem;
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
